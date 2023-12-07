@@ -52,6 +52,14 @@ header {
   color: var(--main-color);
 }
 
+.icon-hum {
+  display: none;
+}
+
+.menu-icon2 i {
+  display: none;
+}
+
 .navbar {
   display: flex;
   align-items: center;
@@ -119,14 +127,6 @@ header {
 
 .navbar a:hover::after {
   width: 100%;
-}
-
-.menu-icon1 i {
-  display: none;
-}
-
-.menu-icon2 i {
-  display: none;
 }
 
 .btn {
@@ -218,10 +218,12 @@ header {
   max-width: 960px;
   margin: 0 auto 0 auto;
   display: grid;
+  padding-left: 10px;
+  padding-right: 10px;
 
   /* grid-template-columns: auto auto auto auto; */
   grid-template-columns: repeat(auto-fit, minmax(180px, auto));
-  gap: 1rem;
+  gap: 0.5rem;
   margin-top: 2rem;
 }
 
@@ -232,11 +234,6 @@ header {
 
 .box h3 {
   margin-top: 1rem;
-}
-
-.box {
-  margin-left: 10px;
-  margin-right: 10px;
 }
 
 .box .box-img img {
@@ -339,25 +336,21 @@ header {
     text-align: center;
   }
 
-  .menu-icon1 i {
+  .icon-hum {
     display: block;
-  }
-
-  .menu-icon2 i {
-    display: none;
   }
 
   .menu-icon1 {
     color: var(--text-color);
     position: absolute;
-    top: 25px;
+    top: 20px;
     right: 20px;
   }
 
   .menu-icon2 {
     color: var(--text-color);
     position: absolute;
-    top: 25px;
+    top: 20px;
     right: 20px;
   }
 
